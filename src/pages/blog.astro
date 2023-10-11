@@ -1,12 +1,37 @@
-<body>
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jonathan</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51H48XTN71"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-51H48XTN71");
+    </script>
+  </head>
+  <body>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
-  
+
     <h1>Posts</h1>
     <p>Writing down some thoughts</p>
     <ul>
-        <li><a href="/git-hooks/">Git hooks</a></li>
-        <li><a href="/intl-codemod/">I18n React codemod </a></li>
+      <li><a href="/git-hooks/">Git hooks</a></li>
+      <li><a href="/intl-codemod/">I18n React codemod</a></li>
     </ul>
   </body>
+</html>
